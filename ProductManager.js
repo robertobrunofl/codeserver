@@ -22,12 +22,44 @@ class ProductManager {
 
 const gestorDeProductos = new ProductManager()
 gestorDeProductos.create({
-    title : "zapatilla" ,
+    title : "Zapatilla" ,
     photo: "zapatilla.jpg",
       category: "calzado",
       price: 100,
-      stock: 1000
+      stock: 500
     
-}) // crear 4 productos mas
+})
+gestorDeProductos.create({
+    title : "Botin" ,
+    photo: "botines.jpg",
+      category: "calzado",
+      price: 150,
+      stock: 300
+    
+})
+gestorDeProductos.create({
+    title : "Pantalon" ,
+    photo: "pantalon.jpg",
+      category: "prendas",
+      price: 45,
+      stock: 200
+    
+})
+gestorDeProductos.create({
+    title : "Remera" ,
+    photo: "remera.jpg",
+      category: "prendas",
+      price: 50,
+      stock: 100
+    
+})
+gestorDeProductos.create({
+    title : "Gorra" ,
+    photo: "gorra.jpg",
+      category: "prendas",
+      price: 25,
+      stock: 40
+    
+})
 
 console.log(gestorDeProductos.read())
